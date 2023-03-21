@@ -1,0 +1,23 @@
+<template>
+  <Header/>
+  <router-link to="/"></router-link>
+  <router-view />
+  <Footer/>
+</template>
+
+<script>
+  import Header from './components/Header.vue';
+  import Footer from './components/Footer.vue';
+  import Anuario from './views/Anuario.vue';
+
+  export default {
+    name: "App",
+    components:{
+      Header,
+      Footer,
+      Anuario
+      
+    }
+  };
+</script>
+
